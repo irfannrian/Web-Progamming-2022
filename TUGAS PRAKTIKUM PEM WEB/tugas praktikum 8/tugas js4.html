@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+    <script>
+
+        function hitung() {
+            let X = Number(document.getElementById('nilaiAwal').value);
+            let Y = Number(document.getElementById('nilaiAkhir').value);
+            let Z = X + Y;
+
+            document.getElementById('nilaiHasil').value = Z;
+        }
+    </script>
+</head>
+<body>
+
+    <input id="nilaiAwal" onchange="hitung()" type="number">
+    <p>+</p>
+    <input id="nilaiAkhir" onchange="hitung()" type="number">
+    <p>=</p>
+    <input id="nilaiHasil" type="number" readonly>
+
+</body>
+</html>
